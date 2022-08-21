@@ -1,38 +1,63 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+:root {
+  --eye-video-left-height: 25vh;
+  --eye-video-left-width: 34vh;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  background-color: #4e584ca6;
+  height: 100vm;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box-left{
+  margin: 1em;
+  width: var(--eye-video-left-width);
+  height: var(--eye-video-left-height);
+  border-radius: 100px 50px 190px 130px;
+  box-shadow: 3px 10px 25px 1px;
+  background-image: linear-gradient(
+    var(--rotate), #adc0c7, #526ab1 43%, #34425f);
+  animation: spin 3.5s; 
+  position: relative;
+  top: 3px;
+  left: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.eye-video-left{
+  width: var(--eye-video-left-width);
+  height: var(--eye-video-left-height);
+  border-radius: 100px 50px 190px 130px;
+  border: 2px solid rgba(255, 255, 255, 0.913);
+  opacity: .4;
+  position: absolute;
+  top:3px;
+  left: 5px;
+}
+.video-buttons{
+  width: 8em;
+  height: 2em;
+  border-radius: 30em;
+  border: 9px;
+  background-color: #c6693f;
   color: white;
+  font-weight: bolder;
+  position: absolute;
+  cursor: pointer;
+}
+#left-eye-button{
+  box-shadow: inset -3px 1px 6px 3px rgba(6, 15, 82, 0.841);
+  top: 20px;
+}
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

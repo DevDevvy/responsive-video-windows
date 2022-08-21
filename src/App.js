@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import { LeftEye } from './LeftEye';
+
+// poster attribute is the beginning frame photo before video starts
+
 
 function App() {
+  const [leftClicked, setLeftClicked] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="container">
+      <div className="App">
+        <h1>Randall's Windows</h1>
+        <LeftEye leftClicked={leftClicked} setLeftClicked={setLeftClicked} id="master-left"/>
+      </div>
+    </main>
   );
 }
 
