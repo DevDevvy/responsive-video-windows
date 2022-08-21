@@ -61,3 +61,24 @@
   }
 }
 
+.info-box{
+  background-color: #34425fb2;
+  width: 20vh;
+  height: auto;
+  padding: 1em;
+  position: absolute;
+  top: 7em;
+  left: 4em;
+  color: white;
+  box-shadow: inset 2px 3px 10px 1px;
+}
+#exit-left{
+  cursor: pointer;
+  font-size: xx-large;
+  position: absolute;
+  border-radius: 25px;
+  margin: 0 auto;
+  right: .5em;
+  box-shadow: 1px 1px 3px;
+  padding: 0em .3em;
+}
