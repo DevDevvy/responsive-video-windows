@@ -29,15 +29,14 @@ export const LeftEye = ({ setLeftClicked, leftClicked }) => {
                         onMouseOut={leftClicked ? event => event.target.play() : event => event.target.pause()}
                         src={`${leftClicked ? vid2 : vid1}`}
                         ref={ref}
+                        // poster is initial photo before video play
                         poster={leftClicked ? '' : "https://c4.wallpaperflare.com/wallpaper/78/739/793/anime-original-girl-meadow-hd-wallpaper-preview.jpg"}>
                     </video>
                     {leftClicked ? '' : <button className="video-buttons" id="left-eye-button" onClick={() => clickedState()}>Left Video</button>}
-
-                </div>
                 {
                     showInfo ?
                         <div className="info-box">
-                            <div id="exit-left" onClick={()=> exitButton()}>⚔︎</div>
+                            <div id="exit-left" onClick={() => exitButton()}>⚔︎</div>
                             <h3>INFO</h3>
                             <ul>
                                 <li>First bit of info</li>
@@ -50,6 +49,7 @@ export const LeftEye = ({ setLeftClicked, leftClicked }) => {
                         :
                         ''
                 }
+                </div>
 
             </section>
         </>
