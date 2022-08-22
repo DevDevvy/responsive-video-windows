@@ -45,7 +45,6 @@
   background-image: linear-gradient(
     var(--rotate), #adc0c7, #526ab1 43%, #34425f);
   animation: spin 3.5s; 
-
   position: relative;
   top: 3px;
   right: 5px;
@@ -140,7 +139,7 @@
   box-shadow: 1px 1px 3px;
   padding: 0em .3em;
 }
-#exit-left:hover, #exit-right:hover{
+#exit-left:hover, #exit-right:hover, #exit-mouth:hover{
   position: absolute;
   box-shadow: inset 1px 1px 3px;
 }
@@ -148,7 +147,7 @@
 #bridge-of-glasses{
   width: 16vh; 
   height: 9vh;  
-  margin: 0 -28px;
+  margin: 0 -32px;
   padding: -10px;
   left: -.3vh;
   z-index: -4;
@@ -190,5 +189,58 @@
   width: 60vh;
   position: relative;
   top: -2vh;
-  filter: drop-shadow(5px 8px 5px rgb(33, 55, 71))
+  z-index: 2;
+  filter: drop-shadow(5px 8px 5px rgb(33, 55, 71)) blur(1px)
+}
+
+/* -------------mouth--------------- */
+
+.box-mouth{
+  width: var(--eye-video-left-width);
+  height: var(--eye-video-left-height);
+  border-radius: 50%/50px 50px 120px 120px;
+  background: #341015;
+  border: 10px solid rgb(155, 84, 84);
+  box-shadow: 3px 4px 24px 1px;
+  position: relative;
+  top: -6vh;
+  z-index: 1;
+  left: 12vh;
+}
+.video-mouth{
+  width: var(--eye-video-left-width)*2;
+  height: var(--eye-video-left-height);
+  border-radius: 50%/50px 50px 120px 120px;
+  border: 7px solid white;
+  border-color: white transparent white transparent;
+  opacity: .7;
+  position: absolute;
+  top:3px;
+  right: -.2vh;
+}
+
+#exit-mouth{
+  cursor: pointer;
+  font-size: xx-large;
+  position: absolute;
+  border-radius: 25px;
+  margin: 0 auto;
+  left: .5em;
+  box-shadow: 1px 1px 3px;
+  padding: 0em .3em;
+}
+.info-box-mouth{
+  width: 20vh;
+  height: auto;
+  padding: 1em;
+  position: absolute;
+  top: 1em;
+  right: 4em;
+  color: black;
+  box-shadow: inset 2px 3px 10px 1px;
+}
+
+#mouth-button{
+  top: 6vh;
+  left: 13vh;
 }
