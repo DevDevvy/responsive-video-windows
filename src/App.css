@@ -19,6 +19,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+/* ------------eyes------------- */
 .eyes-container{
   display: flex;
   
@@ -168,10 +170,10 @@
   border-color: gold transparent transparent transparent;
   position:relative;
 }
-
+/* -------------------------nose---------------------- */
 #bridge-of-nose{
   height: 20vh;
-  filter: blur(4px);
+  filter: blur(4px) drop-shadow(4px 8px black);
   position: relative;
   right: 37vh;
   top: 14vh;
@@ -180,5 +182,13 @@
 #holes{
   font-size: 5em;
   margin-top: 10vh;
-  filter: blur(6px)
+  filter: blur(3px);
+  text-shadow: 5px 4px 12px #0b1023;
+}
+
+#mustache{
+  width: 60vh;
+  position: relative;
+  top: -2vh;
+  filter: drop-shadow(5px 8px 5px rgb(33, 55, 71))
 }

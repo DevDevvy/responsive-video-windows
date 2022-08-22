@@ -4,6 +4,7 @@ import './App.css';
 import { LeftEye } from './LeftEye';
 import { RightEye } from './RightEye';
 import bridge from "./assets/bridge.png"
+import mustache from './assets/mustache.png'
 // poster attribute is the beginning frame photo before video starts
 
 
@@ -23,8 +24,8 @@ function App() {
         <img id="bridge-of-nose" src={bridge}/>
         </div>
         <div className='base-of-nose'>
-        
         <div id="holes">⏜ ⏝ ⏜</div>
+        <img src={mustache} id="mustache" />
         </div>
         </section>
       </div>
