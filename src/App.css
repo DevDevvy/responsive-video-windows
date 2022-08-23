@@ -103,8 +103,8 @@
   height: auto;
   padding: 1em;
   position: absolute;
-  top: 1em;
-  left: 4em;
+  top: .5em;
+  left: 3em;
   color: white;
   box-shadow: inset 2px 3px 10px 1px;
 }
@@ -114,8 +114,8 @@
   height: auto;
   padding: 1em;
   position: absolute;
-  top: 1em;
-  right: 4em;
+  top: .5em;
+  right: 3em;
   color: white;
   box-shadow: inset 2px 3px 10px 1px;
 }
@@ -154,7 +154,7 @@
   top: 12vh;
   border: solid 6px rgb(63, 56, 18);
   border-color: gold transparent transparent transparent;
-  border-radius: 50%/100px 100px 0 0;
+  border-radius: 80%/100px 100px 0 0;
   position:relative;
 }
 #bridge-of-glasses-top{
@@ -203,9 +203,9 @@
   border: 10px solid rgb(155, 84, 84);
   box-shadow: 3px 4px 24px 1px;
   position: relative;
-  top: -6vh;
+  top: -7vh;
   z-index: 1;
-  left: 12vh;
+  left: 11vh;
 }
 .video-mouth{
   width: var(--eye-video-left-width)*2;
@@ -215,17 +215,54 @@
   border-color: white transparent white transparent;
   opacity: .7;
   position: absolute;
+  filter:grayscale();
+  top:3px;
+  right: -.2vh;
+}
+
+
+
+#mouth-button{
+  top: 6vh;
+  left: 12vh;
+}
+#mouth-button:hover, #left-eye-button:hover, #right-eye-button:hover{
+  box-shadow: 3px 1px 6px 3px rgba(6, 15, 82, 0.841);
+}
+
+
+.box-mouth-clicked{
+  width: var(--eye-video-left-width);
+  height: var(--eye-video-left-height);
+  border-radius: 150px 150px 50px 50px;
+  background: #341015;
+  border: 10px solid rgb(155, 84, 84);
+  box-shadow: 3px 4px 24px 1px;
+  position: relative;
+  top: -49vh;
+  left: 11vh;
+}
+.video-mouth-clicked{
+  width: var(--eye-video-left-width)*2;
+  height: var(--eye-video-left-height);
+  border-radius: 150px 150px 50px 50px;
+  border: 7px solid white;
+  border-color: white transparent white transparent;
+  opacity: .7;
+  position: absolute;
+  filter:grayscale();
   top:3px;
   right: -.2vh;
 }
 
 #exit-mouth{
-  cursor: pointer;
   font-size: xx-large;
+  cursor: pointer;
   position: absolute;
   border-radius: 25px;
   margin: 0 auto;
   left: .5em;
+  z-index: 4;
   box-shadow: 1px 1px 3px;
   padding: 0em .3em;
 }
@@ -234,13 +271,10 @@
   height: auto;
   padding: 1em;
   position: absolute;
-  top: 1em;
-  right: 4em;
-  color: black;
+  top: 2em;
+  background: #3410159a;
+  z-index: 3;
+  right: 3em;
+  color: white;
   box-shadow: inset 2px 3px 10px 1px;
-}
-
-#mouth-button{
-  top: 6vh;
-  left: 13vh;
 }

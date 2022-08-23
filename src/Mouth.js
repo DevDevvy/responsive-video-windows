@@ -7,23 +7,20 @@ import vid2 from "./assets/left-vid-2.mp4"
 export const Mouth = ({ setMouthClicked, mouthClicked }) => {
     const [showMouthInfo, setShowMouthInfo] = useState(false)
 
-    useEffect(() => {
-
-    }, [])
-    const clickedState = () => {
+    const mouthClickedState = () => {
         setMouthClicked((prev) => !prev)
     }
-    const exitButton = () => {
+    const exitMouthButton = () => {
         setShowMouthInfo(false)
         setMouthClicked(false)
     }
     return (
         <>
             <section className="mouth-container">
-                <div className="box-mouth">
+                <div className={mouthClicked ? "box-mouth-clicked" : "box-mouth"}>
                     <video muted
                         autoPlay={mouthClicked ? true : false}
-                        className="video-mouth"
+                        className={ mouthClicked? "video-mouth-clicked" : "video-mouth"}
                         onMouseOver={event => event.target.play()}
                         onEnded={mouthClicked ? () => setShowMouthInfo(true) : () => ''}
                         onMouseOut={mouthClicked ? event => event.target.play() : event => event.target.pause()}
@@ -31,11 +28,11 @@ export const Mouth = ({ setMouthClicked, mouthClicked }) => {
                         // poster is initial photo before video play
                         poster={mouthClicked ? '' : "https://c4.wallpaperflare.com/wallpaper/78/739/793/anime-original-girl-meadow-hd-wallpaper-preview.jpg"}>
                     </video>
-                    {mouthClicked ? '' : <button className="video-buttons" id="mouth-button" onClick={() => clickedState()}>Mouth Video</button>}
+                    {mouthClicked ? '' : <button className="video-buttons" id="mouth-button" onClick={() => mouthClickedState()}>Mouth Video</button>}
                 {
                     showMouthInfo ?
                         <div className="info-box-mouth">
-                            <div id="exit-mouth" onClick={() => exitButton()}>⚔︎</div>
+                            <div id="exit-mouth" onClick={() => exitMouthButton()}>⚔︎</div>
                             <h3>INFO</h3>
                             <ul>
                                 <li>First bit of info</li>

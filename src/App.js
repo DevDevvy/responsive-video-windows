@@ -5,6 +5,7 @@ import { LeftEye } from './LeftEye';
 import { RightEye } from './RightEye';
 import bridge from "./assets/bridge.png"
 import mustache from './assets/mustache.png'
+import handlebar from './assets/handlebar.png'
 import { Mouth } from './Mouth';
 // poster attribute is the beginning frame photo before video starts
 
@@ -27,7 +28,7 @@ function App() {
         </div>
         <div className='base-of-nose'>
         <div id="holes">⏜ ⏝ ⏜</div>
-        <img src={mustache} id="mustache" />
+        { mouthClicked ? <img src={handlebar} id="mustache" alt="handlebar-mustache"/> : <img src={mustache} id="mustache" />}
         <Mouth setMouthClicked={setMouthClicked} mouthClicked={mouthClicked}/>
         </div>
 
