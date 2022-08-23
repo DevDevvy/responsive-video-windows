@@ -26,21 +26,27 @@ export const Mouth = ({ setMouthClicked, mouthClicked }) => {
                         onMouseOut={mouthClicked ? event => event.target.play() : event => event.target.pause()}
                         src={`${mouthClicked ? vid2 : vid1}`}
                         // poster is initial photo before video play
-                        poster={mouthClicked ? '' : "https://c4.wallpaperflare.com/wallpaper/78/739/793/anime-original-girl-meadow-hd-wallpaper-preview.jpg"}>
+                        poster={mouthClicked ? '' : "https://images.kinorium.com/movie/shot/290182/h280_38854647.jpg?21575066120"}>
                     </video>
-                    {mouthClicked ? '' : <button className="video-buttons" id="mouth-button" onClick={() => mouthClickedState()}>Mouth Video</button>}
+                    {mouthClicked ? '' : <button className="video-buttons" id="mouth-button" onClick={() => mouthClickedState()}>About</button>}
                 {
                     showMouthInfo ?
                         <div className="info-box-mouth">
                             <div id="exit-mouth" onClick={() => exitMouthButton()}>⚔︎</div>
-                            <h3>INFO</h3>
-                            <ul>
-                                <li>First bit of info</li>
-                                <li>Second bit of info</li>
-                                <li>Third bit of info</li>
-                                <li>Fourth bit of info</li>
-                                <li>Fifth bit of info</li>
-                            </ul>
+                            <h3>About Me 
+                                <br></br>
+                                & My Work
+                            </h3>
+                            <p>
+                                Thank you for visiting my app!
+                                I am Randall, the Singing Dev. 
+                                <br></br>
+                                <a href="www.randallthomasmusic.com"> Visit my website here!</a>
+                                <br></br>
+                                I am a software developer with a background in music and writing.
+                                Feel free to contact me or help support my work.
+                                This app was written by me and is available on github at my <a href="github.com/devdevvy/responsive-video-windows">APP REPO</a>
+                            </p>
                         </div>
                         :
                         ''

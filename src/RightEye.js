@@ -31,18 +31,19 @@ export const RightEye = ({ setRightClicked, rightClicked }) => {
                         // poster is initial photo before video play
                         poster={rightClicked ? '' : "https://c4.wallpaperflare.com/wallpaper/78/739/793/anime-original-girl-meadow-hd-wallpaper-preview.jpg"}>
                     </video>
-                    {rightClicked ? '' : <button className="video-buttons" id="right-eye-button" onClick={() => clickedState()}>Right Video</button>}
+                    {rightClicked ? '' : <button className="video-buttons" id="right-eye-button" onClick={() => clickedState()}>Music</button>}
                 {
                     showRightInfo ?
                         <div className="info-box-right">
                             <div id="exit-right" onClick={() => exitButton()}>⚔︎</div>
-                            <h3>INFO</h3>
+                            <h3>Music & Vocals</h3>
                             <ul>
-                                <li>First bit of info</li>
-                                <li>Second bit of info</li>
-                                <li>Third bit of info</li>
-                                <li>Fourth bit of info</li>
-                                <li>Fifth bit of info</li>
+                                <li>Music Production</li>
+                                <li>Session Vocals</li>
+                                <li>Consultation</li>
+                                <li>Recording</li>
+                                <li>Writing</li>
+                                <li>Editing</li>
                             </ul>
                         </div>
                         :

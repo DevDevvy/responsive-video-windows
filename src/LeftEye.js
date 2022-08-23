@@ -32,18 +32,20 @@ export const LeftEye = ({ setLeftClicked, leftClicked }) => {
                         // poster is initial photo before video play
                         poster={leftClicked ? '' : "https://c4.wallpaperflare.com/wallpaper/78/739/793/anime-original-girl-meadow-hd-wallpaper-preview.jpg"}>
                     </video>
-                    {leftClicked ? '' : <button className="video-buttons" id="left-eye-button" onClick={() => clickedState()}>Left Video</button>}
+                    {leftClicked ? '' : <button className="video-buttons" id="left-eye-button" onClick={() => clickedState()}>Software</button>}
                 {
                     showInfo ?
                         <div className="info-box">
                             <div id="exit-left" onClick={() => exitButton()}>⚔︎</div>
-                            <h3>INFO</h3>
+                            <h3>Full-Stack
+                                <br></br>
+                                Development</h3>
                             <ul>
-                                <li>First bit of info</li>
-                                <li>Second bit of info</li>
-                                <li>Third bit of info</li>
-                                <li>Fourth bit of info</li>
-                                <li>Fifth bit of info</li>
+                                <li>JavaScript</li>
+                                <li>React.js</li>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>SQL</li>
                             </ul>
                         </div>
                         :
