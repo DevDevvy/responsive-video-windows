@@ -25,6 +25,7 @@
     Welcome to my open source, free for anyone to use front-end project. You can see my personal website uses this same reactive windows design at 
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>RandallThomasMusic.com</strong></a>. I love building things, creating, designing, and general problem solving. Feel free to contact me or add your suggestions/PRs!
     <br />
+    This project is a front-end interactive video and information landing page. It's a great way to get some interactivity in how you tell people about yourself or your company.
     <br />
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
