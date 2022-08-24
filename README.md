@@ -114,7 +114,6 @@ If you don't have the latest npm version...
    npm start
    ```
 4. Make your own creation!
-   ```
 
 
 
@@ -156,13 +155,13 @@ Project Link: [https://github.com/devdevvy/responsive-video-windows](https://git
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/devdevvy/responsive-video-windows.svg?style=for-the-badge
 [contributors-url]: https://github.com/devdevvy/responsive-video-windows/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/devdevvy/responsive-video-windows.svg?style=for-the-badge
 [forks-url]: https://github.com/devdevvy/responsive-video-windows/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/devdevvy/responsive-video-windows.svg?style=for-the-badge
 [stars-url]: https://github.com/devdevvy/responsive-video-windows/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/devdevvy/responsive-video-windows.svg?style=for-the-badge
 [issues-url]: https://github.com/devdevvy/responsive-video-windows/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/randall-thomas-music
