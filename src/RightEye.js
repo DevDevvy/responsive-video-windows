@@ -20,14 +20,15 @@ export const RightEye = ({ setRightClicked, rightClicked }) => {
             <section className="right-eye-container">
                 <div className="box-right">
                     <video muted
-                        autoPlay={rightClicked ? true : false}
+                        autoPlay={ rightClicked ? true : false }
                         className="eye-video-right"
-                        onMouseOver={event => event.target.play()}
-                        onEnded={rightClicked ? () => setShowRightInfo(true) : () => ''}
-                        onMouseOut={rightClicked ? event => event.target.play() : event => event.target.pause()}
-                        src={`${rightClicked ? vid2 : vid1}`}
-                        // poster is initial photo before video play
-                        poster={rightClicked ? '' : "https://c4.wallpaperflare.com/wallpaper/78/739/793/anime-original-girl-meadow-hd-wallpaper-preview.jpg"}>
+                        onMouseOver={ event => event.target.play() }
+                        onEnded={ rightClicked ? () => setShowRightInfo(true) : () => '' }
+                        onMouseOut={ rightClicked ? event => event.target.play() : event => event.target.pause() }
+                        // ternary holding video that plays before and video that plays after click --- CHANGE THESE
+                        src={ `${ rightClicked ? vid2 : vid1 }` }
+                        // poster is initial photo before video play ------ CHANGE THIS
+                        poster={ rightClicked ? '' : "https://c4.wallpaperflare.com/wallpaper/78/739/793/anime-original-girl-meadow-hd-wallpaper-preview.jpg" }>
                     </video>
                     {/* when clicked, button disappears to make room for info box, when info box is exited, rightClicked resets back to false */}
                     {
@@ -36,12 +37,13 @@ export const RightEye = ({ setRightClicked, rightClicked }) => {
                             :
                             <button className="video-buttons"
                                 id="right-eye-button"
+                                // name "music" for info button ----- CHANGE THIS
                                 onClick={() => clickedState()}>
                                 Music
                             </button>
                     }
 
-                    {/* Info for each info box goes below */}
+                    {/* Info for each info box goes below ------ CHANGE THESE*/}
                     {
                         showRightInfo ?
                             <div className="info-box-right">

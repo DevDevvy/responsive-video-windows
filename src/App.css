@@ -184,6 +184,7 @@ h1, h3{
   z-index: 0;
   top: 12vh;
   border: solid 6px rgb(63, 56, 18);
+  /* makes all but the top border line transparent */
   border-color: gold transparent transparent transparent;
   position:relative;
 }
@@ -254,7 +255,9 @@ h1, h3{
   width: var(--eye-video-left-width);
   height: var(--eye-video-left-height);
   border-radius: 150px 150px 50px 50px;
+  /* throat coloring */
   background: #341015;
+  /* lips */
   border: 10px solid rgb(155, 84, 84);
   box-shadow: 3px 4px 24px 1px;
   position: relative;
@@ -266,26 +269,14 @@ h1, h3{
   height: var(--eye-video-left-height);
   border-radius: 150px 150px 50px 50px;
   border: 7px solid white;
+  /* line below is the white of the teeth */
   border-color: white transparent white transparent;
   opacity: .7;
   position: absolute;
   filter:grayscale();
-  top:3px;
   right: -.2vh;
 }
-
-#exit-mouth{
-  font-size: x-large;
-  cursor: pointer;
-  position: absolute;
-  border-radius: 25px;
-  margin: 0 auto;
-  top: .5em;
-  left: 5em;
-  z-index: 4;
-  box-shadow: 1px 1px 3px;
-  padding: 0em .3em;
-}
+/* info pop-up for mouth */
 .info-box-mouth{
   width: 20vh;
   height: auto;
@@ -299,6 +290,19 @@ h1, h3{
   color: white;
   border-radius: 50%/50px 50px 200px 200px;
   box-shadow: inset 2px 3px 10px 1px;
+}
+/* button to exit info box */
+#exit-mouth{
+  font-size: x-large;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 25px;
+  margin: 0 auto;
+  top: .5em;
+  left: 5em;
+  z-index: 4;
+  box-shadow: 1px 1px 3px;
+  padding: 0em .3em;
 }
 /* keyframes for animation on page load */
 @keyframes spin {

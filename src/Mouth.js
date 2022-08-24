@@ -1,5 +1,5 @@
 
-import {  useState } from "react"
+import { useState } from "react"
 import vid1 from "./assets/F2FEEE0A-015F-41C4-AD3E-878E178BFD15.mp4"
 import vid2 from "./assets/left-vid-2.mp4"
 
@@ -25,8 +25,9 @@ export const Mouth = ({ setMouthClicked, mouthClicked }) => {
                         onMouseOver={event => event.target.play()}
                         onEnded={mouthClicked ? () => setShowMouthInfo(true) : () => ''}
                         onMouseOut={mouthClicked ? event => event.target.play() : event => event.target.pause()}
+                        // src points to different videos depending on clicked state ---- CHANGE THIS
                         src={`${mouthClicked ? vid2 : vid1}`}
-                        // poster is initial photo before video play
+                        // poster is initial photo before video play ---- CHANGE THIS
                         poster={mouthClicked ? '' : "https://images.kinorium.com/movie/shot/290182/h280_38854647.jpg?21575066120"}>
                     </video>
                     {
@@ -39,8 +40,10 @@ export const Mouth = ({ setMouthClicked, mouthClicked }) => {
                             </button>}
                     {
                         showMouthInfo ?
+                            // Info box in mouth ------- CHANGE THESE
                             <div className="info-box-mouth">
-                                <div id="exit-mouth" onClick={() => exitMouthButton()}>⚔︎</div>
+                                <div id="exit-mouth"
+                                    onClick={() => exitMouthButton()}>⚔︎</div>
                                 <h3>About Me
                                     <br></br>
                                     & My Work
@@ -56,8 +59,7 @@ export const Mouth = ({ setMouthClicked, mouthClicked }) => {
                                     This app was written by me and is available on github at my <a href="github.com/devdevvy/responsive-video-windows">APP REPO</a>
                                 </p>
                             </div>
-                            :
-                            ''
+                            : ''
                     }
                 </div>
             </section>

@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import './App.css';
 import { LeftEye } from './LeftEye';
@@ -17,7 +16,7 @@ function App() {
   return (
     <main className="container">
       <div className="App">
-        
+
         {/* title goes here */}
         <h1>Randall's Windows</h1>
 
