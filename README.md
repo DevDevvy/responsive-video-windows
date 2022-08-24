@@ -143,7 +143,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@randalltmusic](https://twitter.com/randalltmusic) - RandallThomasMusic@gmail.com
+Randall Thomas - [@randalltmusic](https://twitter.com/randalltmusic) - RandallThomasMusic@gmail.com
 
 Project Link: [https://github.com/devdevvy/responsive-video-windows](https://github.com/devdevvy/responsive-video-windows)
 
