@@ -1,32 +1,42 @@
+/* property for animation on page load */
 @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
   inherits: false;
 }
+/* sets up the root size of each window*/
 :root {
   --eye-video-left-height: 25vh;
   --eye-video-left-width: 34vh;
 }
+/* h1 Title and h3 are titles of each info box for pop-ups*/
 h1, h3{
   text-align: center;
 }
+/* sets up the background color for the page */
 .App{
   background: linear-gradient(90deg, #abdcb3 10%, #48628f 90%);
 }
 .container{
   height: 69em;;
 }
+/* overall container for the face components */
 #face-container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+
+
+
 /* ------------eyes------------- */
 .eyes-container{
   display: flex;
   
 }
+
+/* box left and right are the filtered animation effects on top of each eye */
 .box-left{
   width: var(--eye-video-left-width);
   height: var(--eye-video-left-height);
@@ -51,6 +61,8 @@ h1, h3{
   top: 3px;
   right: -2vh;
 }
+
+/* eye-video left and right are the video windows themselves */
 .eye-video-left{
   width: var(--eye-video-left-width);
   height: var(--eye-video-left-height);
@@ -71,6 +83,8 @@ h1, h3{
   top:3px;
   right: 2px;
 }
+
+/* styles each button on the windows */
 .video-buttons{
   width: 8em;
   height: 2em;
@@ -83,6 +97,8 @@ h1, h3{
   box-shadow: inset -3px 1px 6px 3px rgba(6, 15, 82, 0.841);
   cursor: pointer;
 }
+
+/* placement of each button on top of each eye */
 #left-eye-button{
   top: 20px;
   right: 60px;
@@ -91,15 +107,8 @@ h1, h3{
   top: 20px;
   left: 70px;
 }
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
-  100% {
-    --rotate: 360deg;
-  }
-}
 
+/* info box dimensions for each eye window */
 .info-box{
   background-color: #34425fb2;
   width: 20vh;
@@ -122,6 +131,8 @@ h1, h3{
   color: white;
   box-shadow: inset 2px 3px 10px 1px;
 }
+
+/* exit button on each eye pop-up */
 #exit-left{
   cursor: pointer;
   font-size: x-large;
@@ -142,11 +153,14 @@ h1, h3{
   box-shadow: 1px 1px 3px;
   padding: 0em .3em;
 }
+
+/* styling for on exit button hover for each pop-up */
 #exit-left:hover, #exit-right:hover, #exit-mouth:hover{
   position: absolute;
   box-shadow: inset 1px 1px 3px;
 }
 
+/* this is a border that creates a curved line that connects the eye windows */
 #bridge-of-glasses{
   width: 16vh; 
   height: 9vh;  
@@ -160,6 +174,7 @@ h1, h3{
   border-radius: 80%/100px 100px 0 0;
   position:relative;
 }
+/* straight line between eye windows */
 #bridge-of-glasses-top{
   width: 15vh; 
   height: 9vh;  
@@ -172,6 +187,10 @@ h1, h3{
   border-color: gold transparent transparent transparent;
   position:relative;
 }
+
+
+
+
 /* -------------------------nose---------------------- */
 #bridge-of-nose{
   height: 20vh;
@@ -180,7 +199,6 @@ h1, h3{
   right: 37vh;
   top: 14vh;
 }
-
 #holes{
   font-size: 5em;
   margin-top: 10vh;
@@ -188,7 +206,6 @@ h1, h3{
   filter: blur(3px);
   text-shadow: 5px 4px 12px #0b1023;
 }
-
 #mustache{
   width: 60vh;
   position: relative;
@@ -198,7 +215,7 @@ h1, h3{
 }
 
 /* -------------mouth--------------- */
-
+/* effect on top of video window */
 .box-mouth{
   width: var(--eye-video-left-width);
   height: var(--eye-video-left-height);
@@ -224,7 +241,6 @@ h1, h3{
 }
 
 
-
 #mouth-button{
   top: 6vh;
   left: 12vh;
@@ -233,7 +249,7 @@ h1, h3{
   box-shadow: 3px 1px 6px 3px rgba(6, 15, 82, 0.841);
 }
 
-
+/* when mouth is clicked, these create the new shape */
 .box-mouth-clicked{
   width: var(--eye-video-left-width);
   height: var(--eye-video-left-height);
@@ -283,4 +299,13 @@ h1, h3{
   color: white;
   border-radius: 50%/50px 50px 200px 200px;
   box-shadow: inset 2px 3px 10px 1px;
+}
+/* keyframes for animation on page load */
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
 }
