@@ -26,7 +26,6 @@
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>RandallThomasMusic.com</strong></a>. I love building things, creating, designing, and general problem solving. Feel free to contact me or add your suggestions/PRs!
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
@@ -57,12 +56,11 @@ https://user-images.githubusercontent.com/93087995/186293152-c53216c0-9ea7-44bb-
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+   
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+   
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+   
   </ol>
 </details>
 
@@ -71,18 +69,14 @@ https://user-images.githubusercontent.com/93087995/186293152-c53216c0-9ea7-44bb-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Randall's Windows: Face 1 is the first installmment of my ongoing open-source, free-to-use front-end templates and apps with the aim to give back some value to the open source and tech community that has been so kind to me.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
 Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+* I am constantly inspired by the developers and people who give their time and knowledge to me freely
+* I feel a need to give back, to pay it forward somehow
+* I love to build and hope my templates inspire other people to start building. If you create something with one of them, please tag me and let me see your creations! :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -90,16 +84,8 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* Good old fashioned vanilla JavaScript and CSS
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
