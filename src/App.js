@@ -18,25 +18,25 @@ function App() {
       <div className="App">
 
         {/* title goes here */}
-        <h1>Randall's Windows</h1>
+        <h1>Randall's Windows : Face 1</h1>
 
         <section id='face-container'>
           {/* bridge-of-glasses(-top) are empty divs that create the bridge of the glasses */}
           <div id="bridge-of-glasses-top"></div>
 
           <div className='eyes-container'>
-            <LeftEye leftClicked={leftClicked} setLeftClicked={setLeftClicked} id="master-left" />
+            <LeftEye leftClicked={ leftClicked}  setLeftClicked={ setLeftClicked } id="master-left" />
             <div id="bridge-of-glasses"></div>
-            <RightEye rightClicked={rightClicked} setRightClicked={setRightClicked} id="master-right" />
-            <img id="bridge-of-nose" alt="bridge of nose" src={bridge} />
+            <RightEye rightClicked={ rightClicked } setRightClicked={ setRightClicked } id="master-right" />
+            <img id="bridge-of-nose" alt="bridge of nose" src={ bridge } />
           </div>
 
           <div className='base-of-nose'>
             {/* nostrils are just text below lol */}
             <div id="holes">⏜ ⏝ ⏜</div>
             {/* switches which style of mustache based on clicked state */}
-            {mouthClicked ? <img src={handlebar} id="mustache" alt="handlebar-mustache" /> : <img src={mustache} alt="a mustache" id="mustache" />}
-            <Mouth setMouthClicked={setMouthClicked} mouthClicked={mouthClicked} />
+            { mouthClicked ? <img src={handlebar} id="mustache" alt="handlebar-mustache" /> : <img src={mustache} alt="a mustache" id="mustache" /> }
+            <Mouth setMouthClicked={setMouthClicked} mouthClicked={ mouthClicked } />
           </div>
         </section>
       </div>

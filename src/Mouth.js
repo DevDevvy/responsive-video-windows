@@ -18,17 +18,17 @@ export const Mouth = ({ setMouthClicked, mouthClicked }) => {
         <>
             <section className="mouth-container">
                 {/* changes mouth styling depending on clicked state */}
-                <div className={mouthClicked ? "box-mouth-clicked" : "box-mouth"}>
+                <div className={ mouthClicked ? "box-mouth-clicked" : "box-mouth"} >
                     <video muted
-                        autoPlay={mouthClicked ? true : false}
-                        className={mouthClicked ? "video-mouth-clicked" : "video-mouth"}
+                        autoPlay={ mouthClicked ? true : false} 
+                        className={ mouthClicked ? "video-mouth-clicked" : "video-mouth" }
                         onMouseOver={event => event.target.play()}
-                        onEnded={mouthClicked ? () => setShowMouthInfo(true) : () => ''}
-                        onMouseOut={mouthClicked ? event => event.target.play() : event => event.target.pause()}
+                        onEnded={ mouthClicked ? () => setShowMouthInfo(true) : () => '' }
+                        onMouseOut={ mouthClicked ? event => event.target.play() : event => event.target.pause() }
                         // src points to different videos depending on clicked state ---- CHANGE THIS
-                        src={`${mouthClicked ? vid2 : vid1}`}
+                        src={ `${ mouthClicked ? vid2 : vid1 }` }
                         // poster is initial photo before video play ---- CHANGE THIS
-                        poster={mouthClicked ? '' : "https://images.kinorium.com/movie/shot/290182/h280_38854647.jpg?21575066120"}>
+                        poster={ mouthClicked ? '' : "https://images.kinorium.com/movie/shot/290182/h280_38854647.jpg?21575066120" } >
                     </video>
                     {
                         mouthClicked ?
@@ -37,7 +37,7 @@ export const Mouth = ({ setMouthClicked, mouthClicked }) => {
                                 id="mouth-button"
                                 onClick={() => mouthClickedState()}>
                                 About
-                            </button>}
+                            </button> }
                     {
                         showMouthInfo ?
                             // Info box in mouth ------- CHANGE THESE
