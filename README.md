@@ -120,8 +120,8 @@ If you don't have the latest npm version...
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
+## License
+Available under MIT licensing - https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
 
 <!-- CONTRIBUTING -->
 ## Contributing
