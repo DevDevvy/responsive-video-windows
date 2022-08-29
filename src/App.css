@@ -4,6 +4,18 @@
   initial-value: 132deg;
   inherits: false;
 }
+
+*{
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+body{
+  background: linear-gradient(90deg, #abdcb3 10%, #48628f 90%);
+}
+
 /* sets up the root size of each window*/
 :root {
   --eye-video-left-height: 25vh;
@@ -311,5 +323,86 @@ h1, h3{
   }
   100% {
     --rotate: 360deg;
+  }
+}
+
+/* Landing Page CSS */
+.nav{
+  background-color: rgb(59 59 59 / 38%);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-li{
+  margin-right: 1rem;
+  font-weight: bolder;
+  font-size: large;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-li:hover{
+  color: #551a8b;
+}
+
+.active{
+  color: #551a8b;
+}
+
+.landing-page-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.header-div{
+  border-radius: 1rem;
+  background-color: rgb(59 59 59 / 38%);
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.header-div > h1{
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header-div > h2{
+  margin: revert;
+  line-height: 2rem;
+  color: #fff;
+}
+
+.btn{
+  cursor: pointer;
+  background-color: rgba(68, 68, 68, 0.38);  
+  border: solid 1px #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  background: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  /* FOR DESKTOP: */
+  .header-div{
+    width: 38rem;
+    margin: 0rem;
   }
 }
